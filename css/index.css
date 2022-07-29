@@ -1,0 +1,302 @@
+
+html {
+   height: 100%;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   color: #1D1313;
+}
+
+body button {
+   background-color: transparent;
+   border: none;
+}
+
+
+.container-project {
+   max-width: 1200px;
+}
+
+
+/* HEADER */
+
+header {
+   padding: 50px 0;
+   background-color: #FD431A;
+   min-height: 620px;
+   height: 100vh;
+}
+
+.header-menu {
+   margin-left: 105px;
+}
+
+.header-slogan {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 64px;
+   line-height: 110%;
+   text-transform: uppercase;
+}
+
+.header-slogan:hover,
+.header-bottom:hover  {
+   cursor: default;
+}
+
+.header-wrapper {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.header-hamburger {
+   font-size: 30px;
+   justify-content: flex-end;
+}
+
+.menu-wrapper {
+      flex-wrap: wrap;
+}
+
+.header-mobil__menu {
+   margin: 70px 0 50px 0;
+   display: none;
+   flex-direction: column;
+   align-items: baseline;
+}
+
+.header-mobil__menu.show {
+   display: flex;
+}
+
+.navbar-toggler[aria-expanded=true] i:before {
+   content: "\f00d";
+}
+
+
+.header-logo {
+   font-weight: 600;
+   font-size: 35px;
+   line-height: 43px;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #1D1313;
+}
+
+.header-logo:hover {
+   color: #1D1313;
+}
+
+.header-wrapper__btn {
+   text-align: right;
+}
+
+.header-menu__item {
+   margin-bottom: 30px;
+}
+
+.header-menu__item a {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 29px;
+   text-decoration-line: underline;
+   text-transform: lowercase;
+   color: #1D1313;
+}
+
+.header-menu__item a:hover {
+   text-decoration: none;
+}
+
+.header-wrapper__btn button {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   text-transform: lowercase;
+   padding: 4px 10px;
+   border: 2px solid #1D1313;
+}
+
+.header-wrapper__btn button:hover {
+   background-color: #1D1313;
+   color: #FD431A;
+}
+
+.header-bottom {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 160%;
+}
+
+header.menu-open .header-bottom {
+   display: none;
+}
+
+
+.header-menu__item-social.header-menu__item a {
+   font-size: 30px
+}
+
+
+
+
+@media (max-width: 1200px) {
+   .container-project {
+      max-width: 960px;
+   }
+
+   .header-logo {
+      font-size: 28px;
+   }
+
+   .header-slogan {
+      font-size: 50px;
+   }
+
+   .header-menu {
+      margin-left: 40px;
+   }
+
+   .header-mobil__menu {
+      margin-left: 0;
+   }
+
+   .header-menu__item a {
+      font-size: 20px;
+   }
+
+   .header-bottom {
+      font-size: 16px;
+   }
+
+   .header-wrapper__btn button {
+      font-size: 16px;
+      line-height: 20px;
+   }
+}
+
+@media (max-width: 992px) {
+   .container-project {
+      max-width: 720px;
+   }
+
+   .header-menu__item {
+      width: 50%;
+   }
+
+   header {
+      min-height: 100vh;
+      height: auto;
+      display: flex;
+   }
+   .header-wrapper {
+      height: auto;
+   }
+
+   .header-slogan {
+      font-size: 44px;
+   }
+}
+
+@media (max-width: 768px) {
+   header {
+      min-height: 600px;
+   }
+   .container-project {
+      max-width: 540px;
+   }
+
+   .header-logo {
+      font-size: 24px;
+      line-height: 29px;
+   }
+
+   .header-slogan {
+      font-size: 35px;
+      line-height: 43px;
+   }
+
+   .header-bottom {
+      font-size: 20px;
+      line-height: 160%;
+   }
+
+   .header-wrapper__btn button {
+      font-size: 18px;
+      line-height: 22px;
+   }
+
+   .header-menu__item a {
+      font-size: 24px;
+      line-height: 29px;
+   }
+}
+
+@media (max-width: 576px) {
+ 
+   .container-project {
+         max-width: 400px;
+   }
+
+   .header-slogan {
+      font-size: 24px;
+      line-height: 120%;
+      margin-bottom: 30px;
+   }
+
+   .header-menu__item {
+      width: 100%;
+   }
+
+   .header-wrapper__btn {
+      margin-top: 17px;
+      order: 1;
+      margin-bottom: 80px;
+      text-align: left;
+   }
+
+   header.menu-open  .header-wrapper__btn,
+   header.menu-open .header-slogan {
+      display: none;
+   }
+
+   .header-mobil__menu {
+      margin: 50px 0;
+   }
+
+   header.menu-open .header-wrapper {
+      justify-content: flex-start;
+   }
+}
+
+@media (max-width: 425px) {
+   header {
+      padding: 25px 0;
+   }
+   .container-project {
+      max-width: 325px;
+   }
+
+   .header-slogan {
+      font-size: 20px;
+      line-height: 110%;
+   }
+
+   .header-mobil__menu {
+      margin: 30px 0;
+   }
+}
+
+/* END HEADER */
